@@ -1,0 +1,151 @@
+//colors
+$mine_shaft: #323232;
+$white: #ffffff;
+$color_mexican_red_approx: #9f2720;
+$black: #000000;
+
+//fonts
+$font_0: Barlow Condensed;
+$font_1: sans-serif;
+
+//urls
+$url_0: url(https://fonts.googleapis.com/css?family=Barlow+Condensed);
+
+//@extend-elements
+//original selectors
+//.msg-title-header, .title, .description, .resultTitle, .result, .code .btn
+%extend_1 {
+	padding-top: 7px;
+	padding-bottom: 7px;
+	font-family: $font_0, $font_1;
+}
+
+
+@import $url_0;
+.msg-title-header {
+	@extend %extend_1;
+}
+.title {
+	@extend %extend_1;
+	font-size: 14px;
+	letter-spacing: 12px;
+	text-align: center;
+	background-color: $mine_shaft;
+	color: $white;
+}
+.description {
+	@extend %extend_1;
+	background-color: $color_mexican_red_approx;
+	color: $white;
+}
+.resultTitle {
+	@extend %extend_1;
+	background-color: $mine_shaft;
+	color: $white;
+}
+.result {
+	@extend %extend_1;
+	background-color: $white;
+	color: $black;
+}
+.code {
+	background-color: $color_mexican_red_approx;
+	.btn {
+		@extend %extend_1;
+		background-color: $mine_shaft;
+	}
+}
+.navbar-inverse {
+	background-color: $mine_shaft;
+	border-style: none;
+	border-radius: 0;
+	.navbar-nav {
+		> li > a {
+			color: $white;
+			font-family: $font_0, $font_1;
+			&:hover {
+				background-color: $color_mexican_red_approx;
+				color: $white;
+			}
+			&:focus {
+				background-color: $color_mexican_red_approx;
+				color: $white;
+			}
+		}
+		> .active > a {
+			background-color: $color_mexican_red_approx;
+			color: $white;
+			&:hover {
+				background-color: $color_mexican_red_approx;
+				color: $white;
+			}
+			&:focus {
+				background-color: $color_mexican_red_approx;
+				color: $white;
+			}
+		}
+	}
+	.navbar-toggle {
+		background-color: $color_mexican_red_approx;
+		border-color: $color_mexican_red_approx;
+		.icon-bar {
+			background-color: $white;
+		}
+		&:hover {
+			background-color: $color_mexican_red_approx;
+			border-color: $color_mexican_red_approx;
+		}
+		&:focus {
+			background-color: $color_mexican_red_approx;
+			border-color: $color_mexican_red_approx;
+		}
+	}
+}
+.navbar-brand {
+	padding: 10px;
+	img {
+		max-width: 100px;
+	}
+}
+
+@mixin btn($px) {
+	border: $px;
+	border-radius: $px;
+}
+
+.btn-warning {
+	@include btn(0);
+	background-color: $mine_shaft;
+	font-family: $font_0, $font_1;
+	&:hover {
+		color: $white;
+		background-color: $mine_shaft;
+		border: 0;
+	}
+	&:focus {
+		color: $white;
+		background-color: $mine_shaft;
+		border: 0;
+		&:active {
+			color: $white;
+			background-color: $mine_shaft;
+			border: 0;
+		}
+	}
+}
+body {
+	margin-top: 80px;
+}
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
+p {
+	margin: 0;
+}
+.hideCode {
+	display: none;
+}
+.showCode {
+	display: block;
+}

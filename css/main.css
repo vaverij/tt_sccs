@@ -1,0 +1,130 @@
+@import
+url("https://fonts.googleapis.com/css?family=Barlow+Condensed");
+.msg-title-header, .title, .description, .resultTitle, .result, .code
+.btn {
+ padding-top: 7px;
+ padding-bottom: 7px;
+ font-family: "Barlow Condensed", sans-serif;
+}
+.msg-title-header, .title, .description, .resultTitle, .result, .code
+.btn {
+ padding-top: 7px;
+ padding-bottom: 7px;
+ font-family: "Barlow Condensed", sans-serif;
+}
+.navbar-inverse {
+ background-color: #323232;
+ border-style: none;
+ border-radius: 0px;
+}
+.navbar-inverse .navbar-nav {
+/* default text color */
+/* text color and active element background color */
+}
+.navbar-inverse .navbar-nav > li > a {
+ color: #ffffff;
+ font-family: "Barlow Condensed", sans-serif;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+ background-color: #9f2720;
+ color: #ffffff;
+}
+.navbar-inverse .navbar-nav > li > a:focus {
+ background-color: #9f2720;
+ color: #ffffff;
+}
+.navbar-inverse .navbar-nav > .active > a {
+ background-color: #9f2720;
+ color: #ffffff;
+}
+.navbar-inverse .navbar-nav > .active > a:hover {
+ background-color: #9f2720;
+ color: #ffffff;
+}
+.navbar-inverse .navbar-nav > .active > a:focus {
+ background-color: #9f2720;
+ color: #ffffff;
+}
+.navbar-inverse .navbar-toggle {
+ background-color: #9f2720;
+ border-color: #9f2720;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+ background-color: #ffffff;
+}
+.navbar-inverse .navbar-toggle:hover {
+ background-color: #9f2720;
+ border-color: #9f2720;
+}
+.navbar-inverse .navbar-toggle:focus {
+ background-color: #9f2720;
+ border-color: #9f2720;
+}
+.navbar-brand {
+ padding: 10px;
+}
+.navbar-brand img {
+ max-width: 100px;
+}
+.title {
+ font-size: 14px;
+ letter-spacing: 12px;
+ text-align: center;
+ background-color: #323232;
+ color: #ffffff;
+}
+.description {
+ background-color: #9f2720;
+ color: #ffffff;
+}
+.resultTitle {
+ background-color: #323232;
+ color: #ffffff;
+}
+.result {
+ background-color: #ffffff;
+ color: #000000;
+}
+.code .btn {
+ background-color: #323232;
+}
+.btn-warning {
+ background-color: #323232;
+ border: 0;
+ border-radius: 0;
+ font-family: "Barlow Condensed", sans-serif;
+}
+.btn-warning:hover {
+ color: #fff;
+ background-color: #323232;
+ border: 0;
+}
+.btn-warning:focus {
+ color: #fff;
+ background-color: #323232;
+ border: 0;
+}
+.btn-warning:focus:active {
+ color: #fff;
+ background-color: #323232;
+ border: 0;
+}
+body {
+ margin-top: 80px;
+}
+.row {
+ margin-left: 0;
+ margin-right: 0;
+}
+p {
+ margin: 0 0 0;
+}
+.code {
+ background-color: #9f2720;
+}
+.hideCode {
+ display: none;
+}
+.showCode {
+ display: block;
+}
